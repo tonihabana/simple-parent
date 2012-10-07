@@ -6,7 +6,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 
 public class WeatherServlet extends HttpServlet {
-    public void doGet(HttpServletRequest request,
+    public void doGet(HttpServletRequest requestz,
                       HttpServletResponse response)
         throws ServletException, IOException {
 	String zip = request.getParameter("zip" );

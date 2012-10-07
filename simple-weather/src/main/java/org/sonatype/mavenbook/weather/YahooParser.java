@@ -20,7 +20,7 @@ public class YahooParser {
 		SAXReader xmlReader = createXmlReader();
 		Document doc = xmlReader.read( inputStream );
 
-		log.info( "Parsing XML Response" )
+		log.info( "Parsing XML Response" );
 		weather.setCity( doc.valueOf("/rss/channel/y:location/@city") );
 		weather.setRegion( doc.valueOf("/rss/channel/y:location/@region") );
 		weather.setCountry( doc.valueOf("/rss/channel/y:location/@country") );
